@@ -1,7 +1,7 @@
 # Python Mini Projects
 
-- Password Generator
-A simple Python-based password generator that creates strong and random passwords based on user preferences.
+# Password Generator
+- A simple Python-based password generator that creates strong and random passwords based on user preferences.
 
 ---
 
