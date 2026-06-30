@@ -1,18 +1,26 @@
-# Python Mini Projects
+### Python Mini Projects
 
 # Password Generator
 - A simple Python-based password generator that creates strong and random passwords based on user preferences.
+# Calculator
+- A simple Python calculator capable of performing basic arithmetic operations, including addition, subtraction, multiplication, division, average, square, cube, and square root.
 
 ---
 
 ##  Features
 
-* Generate secure random passwords
-* Custom number of letters
-* Custom number of numbers
-* Custom number of symbols
-* Randomized password order
-* Easy-to-use command-line interface
+## Features
+
+- User-defined password length
+- Random letter generation
+- Random number generation
+- Random symbol generation
+- Password randomization using `random.shuffle()`
+- Strong password generation
+- Command-line interface (CLI)
+- User-friendly input prompts
+- Dynamic password creation
+- Beginner-friendly Python implementation
 
 ---
 
@@ -26,6 +34,7 @@
 ## Concepts Practiced
 
 * Lists
+* Funtions
 * Loops
 * User Input
 * Random Module
