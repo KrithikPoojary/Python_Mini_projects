@@ -4,6 +4,8 @@
 - A simple Python-based password generator that creates strong and random passwords based on user preferences.
 # Calculator
 - A simple Python calculator capable of performing basic arithmetic operations, including addition, subtraction, multiplication, division, average, square, cube, and square root.
+# Unit convertor 
+- Unit Converter is a simple and user-friendly tool that converts different units of measurement quickly and accurately. It supports conversions like length, weight, temperature, and more, making everyday calculations easier and faster.
 
 ---
 
@@ -28,6 +30,7 @@
 
 * Python 3
 * Random Module
+* Time Module
 
 ---
 
