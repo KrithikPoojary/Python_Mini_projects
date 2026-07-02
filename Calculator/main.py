@@ -22,7 +22,7 @@ def square_root(num):
     return num**(1/2)
 print("") #This print is for just space
 
-user = int(input("Select the following number to use operation: ")) #user will choose his operation
+user = int(input("Select the following number to use operation: ")) #user will choose his operations
 if user==1:
     number1 = float(input("Enter the number1: "))
     number2 = float(input("Enter the number2: "))
