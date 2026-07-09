@@ -29,7 +29,10 @@ while True:
                                 print(f"Room no-{room_no} which is {room_data['category']} and its rent is {room_data['rent_per_day']}/-")
                         print("Manager: select which rooms you want.")
                         q = int(input("select rooms: "))
-                exit()
+                        room_data = mid_range_rooms[q]
+                        print(f"Thanks sir for booking room no {q}! Here is your bill:\nRoom type: {room_data['category']}\nRoom rent: {room_data['rent_per_day']}")
+                        
+                        exit()
         elif user == 2:
             dine()
             exit()
