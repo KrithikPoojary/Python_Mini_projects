@@ -1,6 +1,7 @@
 from room import mid_range_rooms, semi_luxury_rooms, premium_rooms
 from menu import chicken_meal , chinese_menu , drink_menu , rice_meal
-
+from datetime import datetime
+now = datetime.now()
 print("***********************")
 print("Welcome to PY HOTELS")
 print("***********************")
@@ -19,9 +20,9 @@ class hotelroom():
 
     def select(self , n):
         self.n = n
-        room_data = mid_range_rooms[q]
-        print(f"Thanks sir for booking room no {q}! Here is your bill:\nRoom type: {room_data['category']}\nRoom rent: {room_data['rent_per_day']}")
-        
+        b = now.strftime("%Y-%m-%d %H:%M:%S")
+        room_data = mid_range_rooms[n]
+        print(f"Thanks sir for booking room no {n}! Here is your bill:\nRoom type: {room_data['category']}\nRoom rent: {room_data['rent_per_day']}\nCheck in time = {b}")
 
 a = hotelroom()
 x = int(input("Choose your option from above: "))
