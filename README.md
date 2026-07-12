@@ -1,10 +1,11 @@
-#  Python Mini Projects
+# Python Mini Projects
 
 ## Projects
 
--  Password Generator
--  Calculator
--  Unit Converter
+- Calculator
+- Password Generator
+- Unit Converter
+- Hotel Management System
 
 ## Password Generator Features
 
@@ -39,11 +40,27 @@
 - Fast Unit Conversion
 - Beginner-friendly Python Project
 
+## Hotel Management System Features
+
+- Room booking (Mid-range, Semi-luxury, Premium rooms)
+- Stay-type selection (One day / One night / Few hours)
+- Restaurant menu system (Chinese, Rice Meal, Chicken Meal, Drinks)
+- Multi-item food ordering with quantity selection
+- Itemized bill generation with subtotal per item
+- Grand total calculation
+- Check-in / checkout timestamp using `datetime`
+- Object-Oriented design using classes
+- Nested dictionaries for structured menu and room data
+- Dictionary unpacking (`**`) to merge multiple menus into one
+- Modular code split across multiple files (`main.py`, `room.py`, `menu.py`)
+- Command-line interface (CLI)
+
 ## Technologies
 
 - Python 3
 - Random Module
 - Time Module
+- Datetime Module
 
 ## What I Learned
 
@@ -53,11 +70,16 @@
 - Loops (`while`, `for`)
 - Functions
 - Lists
+- Dictionaries (including nested dictionaries)
+- Dictionary Unpacking (`**`)
 - String Manipulation
 - Random Module
 - List Operations
 - `random.choice()`
 - `random.shuffle()`
+- Object-Oriented Programming basics (Classes, Methods, `self`)
+- Working with `datetime` for timestamps
+- Modular code using separate files (imports across modules)
 - Code Organization
 - Beginner-friendly Project Structure
 
@@ -65,9 +87,16 @@
 
 ```text
 Python-Mini-Projects/
-├── Password-Generator/
 ├── Calculator/
-├── Unit-Converter/
+│   └── main.py
+├── Hotel_management_system/
+│   ├── main.py
+│   ├── menu.py
+│   └── room.py
+├── Password_Generator/
+│   └── main.py
+├── Unit_Convertor/
+│   └── main.py
 └── README.md
 ```
 
@@ -75,7 +104,7 @@ Python-Mini-Projects/
 
 This repository contains beginner-friendly Python projects that I built while learning Python programming.
 
-Each project helped me practice Python fundamentals while solving simple real-world problems and improving my problem-solving skills.
+Each project helped me practice Python fundamentals while solving simple real-world problems and improving my problem-solving skills. The Hotel Management System project pushed me further into Object-Oriented Programming, nested data structures, and building a more complete, multi-file, multi-step CLI application.
 
 ## Future Improvements
 
@@ -83,12 +112,14 @@ Each project helped me practice Python fundamentals while solving simple real-wo
 - Improve user interface
 - Add better input validation
 - Optimize the code structure
-- Learn Object-Oriented Programming (OOP)
+- Learn Object-Oriented Programming (OOP) further
 - Convert some projects into GUI applications
+- Add persistent storage (CSV/JSON/SQLite) for hotel bookings and orders
+- Combine room and food billing into a single unified invoice
 
 ## Note
 
 This repository represents my Python learning journey.
 
--  All projects are written by me.
--  My goal is to keep building more Python projects as I continue learning.
+- All projects are written by me.
+- My goal is to keep building more Python projects as I continue learning.
