@@ -1,10 +1,13 @@
 import time
 
+# welcome message pops 
 print("Welcome to Unit_convertor")
 time.sleep(1)
 print("Here we can convert the following units like..")
 print("1. CM → Inch\n2. Inch → CM\n3. KG → Pound\n4. Pound → KG\n5. KM → Mile\n6. Mile → KM\n7. Celsius → Fahrenheit\n8. Fahrenheit → Celsius")
 print("")
+
+# Working functions
 def cm_inchs(n):
     i = n/2.54
     print(f"The convertion of {n}cm to Inchs is {round(i ,2 )}inchs")
@@ -36,6 +39,8 @@ def celsius_fahrenheit(n):
 def fahrenheit_celsius(n):
     cel = (n-32)*5/9
     print(f"The conversion of {n}°F to Celsius is {round (cel ,2 )}°C")
+
+# Loops to satisfies the user interaction with units he want to convert
 
 while True:
     user = int(input("For the conversion choose 1 to 8 from above units: "))
