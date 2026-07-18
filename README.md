@@ -6,18 +6,20 @@
 - Password Generator
 - Unit Converter
 - Hotel Management System
+- Feature Extraction (Anime Dataset)
 
-## Password Generator Features
+## Feature Extraction (Anime Dataset) Features
 
-- User-defined password length
-- Random letter generation
-- Random number generation
-- Random symbol generation
-- Password randomization using `random.shuffle()`
-- Strong password generation
-- Command-line interface (CLI)
-- User-friendly input prompts
-- Dynamic password creation
+- Reading and exploring CSV data using `pandas`
+- Custom function to extract **episode count** from the `Title` column (e.g., `"(64 eps)"` → `64`)
+- String cleaning to remove unwanted text (`" eps"`) before type conversion
+- Data type conversion (`str` → `int`) for numerical analysis
+- Custom function to extract **Airing Date** from the `Title` column using character-by-character parsing
+- Function to calculate **Total Months** between start and end airing dates (e.g., `Apr 2009 - Jul 2010` → `16`)
+- Use of `pd.to_datetime()` with custom format (`%b %Y`) to parse month-year strings
+- Data type verification at each transformation step using `type()`
+- Row-wise data inspection using `.loc[]`
+- Command-line / notebook-based data analysis
 
 ## Calculator Features
 
@@ -30,6 +32,18 @@
 - Cube
 - Square Root
 - Command-line Interface
+
+## Password Generator Features
+
+- User-defined password length
+- Random letter generation
+- Random number generation
+- Random symbol generation
+- Password randomization using `random.shuffle()`
+- Strong password generation
+- Command-line interface (CLI)
+- User-friendly input prompts
+- Dynamic password creation
 
 ## Unit Converter Features
 
@@ -61,6 +75,8 @@
 - Random Module
 - Time Module
 - Datetime Module
+- Pandas
+- NumPy
 
 ## What I Learned
 
@@ -82,6 +98,12 @@
 - Modular code using separate files (imports across modules)
 - Code Organization
 - Beginner-friendly Project Structure
+- Reading and analyzing CSV data with `pandas`
+- Custom string parsing to extract structured data from unstructured text
+- Data type conversion and verification (`str` to `int`, string to `datetime`)
+- Using `pd.to_datetime()` for date parsing with custom formats
+- Calculating date differences (month-level granularity) using `.dt` accessor
+- Debugging and testing transformations row-by-row with `.loc[]`
 
 ## Project Structure
 
@@ -97,6 +119,10 @@ Python-Mini-Projects/
 │   └── main.py
 ├── Unit_Convertor/
 │   └── main.py
+├── Feature_extraction/
+│   ├── anime.csv
+│   ├── main.py
+│   └── Project1.ipynb
 └── README.md
 ```
 
@@ -104,7 +130,7 @@ Python-Mini-Projects/
 
 This repository contains beginner-friendly Python projects that I built while learning Python programming.
 
-Each project helped me practice Python fundamentals while solving simple real-world problems and improving my problem-solving skills. The Hotel Management System project pushed me further into Object-Oriented Programming, nested data structures, and building a more complete, multi-file, multi-step CLI application.
+Each project helped me practice Python fundamentals while solving simple real-world problems and improving my problem-solving skills. The Hotel Management System project pushed me further into Object-Oriented Programming, nested data structures, and building a more complete, multi-file, multi-step CLI application. The Feature Extraction project introduced me to data analysis with `pandas`, working with real-world messy data, and extracting structured features (episode counts, airing dates, duration in months) from raw text fields.
 
 ## Future Improvements
 
@@ -116,6 +142,8 @@ Each project helped me practice Python fundamentals while solving simple real-wo
 - Convert some projects into GUI applications
 - Add persistent storage (CSV/JSON/SQLite) for hotel bookings and orders
 - Combine room and food billing into a single unified invoice
+- Extend feature extraction to more columns (e.g., Studio, Genre) from the anime dataset
+- Handle edge cases in date/episode parsing (missing or malformed values)
 
 ## Note
 
