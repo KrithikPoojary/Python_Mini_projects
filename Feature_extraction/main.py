@@ -52,3 +52,25 @@ def extract2(date):
                 time += date[j]
             return time
                 
+
+a['Airing Date'] = a['Title'].apply(extract2)
+print(a.head()) # checking 
+
+#For this function , i prefered ai instead.
+
+def total_months(df, date_col='Airing Date'):
+    """
+    Calculates total number of months between start and end date
+    e.g. 'Apr 2009 - Jul 2010' -> 16
+    """
+    split_dates = df[date_col].str.split(' - ', expand=True)
+    
+    start = pd.to_datetime(split_dates[0], format='%b %Y', errors='coerce')
+    end   = pd.to_datetime(split_dates[1], format='%b %Y', errors='coerce')
+    
+    df['Total Months'] = (end.dt.year - start.dt.year) * 12 + (end.dt.month - start.dt.month) + 1
+    
+    return df
+
+
+a = total_months(a)
