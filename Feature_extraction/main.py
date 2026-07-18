@@ -74,3 +74,6 @@ def total_months(df, date_col='Airing Date'):
 
 
 a = total_months(a)
+print(a.head())
+
+print(type(a.loc[0]['Total Months']))  # just checking 
